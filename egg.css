@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color:pink ;
+    width: 1000px;
+    height: 650px;
+    border:5px solid black;
+    margin: auto;
+    position: relative;
+}
+.egg-1{
+    width: 120px;
+    height: 150px;
+    background-color: blue;
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    left:20%;
+    top:50%;
+    transform: translate(0%,-50%);
+    animation: egg-1 4s linear infinite;
+}
+@keyframes egg-1{
+    0%{
+        transform: translate(0%,-50%) rotate(0deg);
+    }
+    25%{
+        transform: translate(200%,-175%) rotate(90deg);
+    }
+    50%{
+        transform: translate(400%,-50%) rotate(180deg);
+    }
+    75%{
+        transform: translate(200%,75%) rotate(240deg);
+    }
+    100%{
+        transform: translate(0%,-50%) rotate(360deg);
+    }
+}
+.egg-2{
+    width: 120px;
+    height: 150px;
+    background-color: red;
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    left:50%;
+    top:10%;
+    transform: translate(-50%);
+    animation: egg-2 4s infinite linear;
+}
+@keyframes egg-2{
+    0%{
+        transform: translate(-50%,0%) rotate(0deg);
+    }
+    25%{
+        transform: translate(150%,120%) rotate(90deg);
+    }
+    50%{
+        transform: translate(-50%,240%) rotate(180deg);
+    }
+    75%{
+        transform: translate(-250%,120%) rotate(240deg);
+    }
+    100%{
+        transform: translate(-50%,0%) rotate(360deg);
+    }
+}
+.egg-3{
+    width: 120px;
+    height: 150px;
+    background-color: yellow;
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    right:20%;
+    top:50%;
+    transform: translate(0,-50%);
+    animation: egg-3 4s  infinite linear;
+    
+}
+@keyframes egg-3{
+    0%{
+        transform: translate(0%,-50%) rotate(0deg);
+    }
+    25%{
+        transform: translate(-200%,70%) rotate(90deg);
+    }
+    50%{
+        transform: translate(-400%,-50%) rotate(180deg);
+    }
+    75%{
+        transform: translate(-200%,-170%)  rotate(240deg);
+    }
+    100%{
+        transform: translate(0%,-50%) rotate(360deg);
+    }
+}
+.egg-4{
+    width: 120px;
+    height: 150px;
+    background-color: rgb(44, 168, 44);
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    left:50%;
+    bottom:10%;
+    transform: translate(-50%);
+    animation: egg-4 4s infinite linear;
+}
+@keyframes egg-4{
+    0%{
+        transform: translate(-50%,0%)  rotate(0deg);
+    }
+    25%{
+        transform: translate(-250%,-120%) rotate(90deg);
+    }
+    50%{
+        transform: translate(-50%,-240%) rotate(180deg);
+    }
+    75%{
+        transform: translate(150%,-120%) rotate(240deg);
+    }
+    100%{
+        transform: translate(-50%,0%) rotate(360deg);
+    } 
+}
+.ball{
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    border-radius: 50%;
+    animation: ball 10s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+    animation-play-state: running;
+}
+@keyframes ball {
+    0%{
+        transform: translate(0%,0%)  rotate(0deg);
+    }
+    25%{
+        transform: translate(1550%,0%) rotate(180deg);
+    }
+    50%{
+        transform: translate(1550%,960%) rotate(360deg);
+    }
+    75%{
+        transform: translate(0%,960%) rotate(540deg);
+    }
+    100%{
+        transform: translate(0%,0%) rotate(720deg);
+    } 
+}
+.small{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: pink;
+    border: 2px solid black;
+    
+}
